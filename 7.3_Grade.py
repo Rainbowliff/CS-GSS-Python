@@ -1,10 +1,10 @@
 
 print ("Please enter your grade:")
-x = input()
+x = int(input())
 
 if x > 100:
     print ("Please enter a VALID grade (0-100)")
-    x = input()
+    x = int(input())
 
 if 100 >= x >= 91:
     print ("Congratulations!,you got an 'A'!")
