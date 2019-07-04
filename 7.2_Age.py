@@ -1,5 +1,5 @@
 print ("enter your age:")
-year = input()
+year = int(input())
 
 x = year * 12 #months
 y = year * 365 #days
