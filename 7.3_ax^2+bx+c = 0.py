@@ -1,13 +1,13 @@
 import math
-print ("This is a program which solves ax^2+bx+c=0 problems")
-print ("Please enter the number for 'a'")
-a = input()
+print("This is a program which solves ax^2+bx+c=0 problems")
+print("Please enter the number for 'a'")
+a = int(input())
 
-print ("Please enter the number for 'b'")
-b = input()
+print("Please enter the number for 'b'")
+b = int(input())
 
 print ("Please enter the number for 'c'")
-c = input()
+c = int(input())
 
 down = 2 * a
 delta = (b ** 2) - (4 * a * c)
