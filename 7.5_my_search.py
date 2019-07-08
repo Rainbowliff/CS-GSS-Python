@@ -9,14 +9,13 @@ def search():
             print("The index of your number is", my_list.index(x))
             e = 0
             return 0
-            break
         else:
             e = -1
 
     if e == -1:
-        return -1
         print("The item is not found")
-
+        return -1
+       
 
 search()
 
