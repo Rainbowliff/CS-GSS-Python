@@ -8,7 +8,7 @@ def mul(num, c):
 
 def sum_lists(a, b):
     list_c = []
-    for y in range(0, len(a) - 1):
+    for y in range(0, len(a)):
         list_c.append(a[y] + b[y])
     print("List C:", list_c)
     return list_c
