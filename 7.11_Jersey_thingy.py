@@ -75,15 +75,8 @@ while v != -1:
         numbers_list = []
         for k in player_list:
             if players[k] > limit:
-                numbers_list.append(players[k])
+                numbers_list.append(k)
         numbers_list = sorted(numbers_list)
-
-        def get_key(val):
-            for key, value in players.items():
-                if val == value:
-                    return key
-
-
         for ar in numbers_list:
-            print("Jersey number:", get_key(ar), ", Rating:", ar, " ")
+            print("Jersey number:", ar, ", Rating:", players[ar], " ")
         c = menu()
