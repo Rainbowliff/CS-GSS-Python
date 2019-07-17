@@ -1,13 +1,13 @@
 class student:
 
     def __init__(self):
-        self.name = 'Bob'
-        self.age = 15
+        self.name = ''
+        self.age = 0
         self.list_of_grades = []
         self.gpa = 0
-        self.graduation_day = 13
-        self.graduation_month = 5
-        self.graduation_year = 2019
+        self.graduation_day = 0
+        self.graduation_month = 0
+        self.graduation_year = 0
 
     def find_gpa(self):
         sumn = 0
@@ -22,7 +22,7 @@ class student:
         x = int(input("How many grades from are you gonna enter:"))
 
         while len(self.list_of_grades) < x:
-            self.list_of_grades.append(input("Please enter a grade(1-4):"))
+            self.list_of_grades.append(float(input("Please enter a grade(1-4):")))
 
         self.graduation_day = int(input("Please enter the student's graduation day:"))
         self.graduation_month = int(input("Please enter the student's graduation month:"))
