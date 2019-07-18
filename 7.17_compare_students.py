@@ -15,17 +15,20 @@ class student:
     def __eq__(self, other):
         if self.fname == other.fname and self.lname == other.lname and self.student_id == other.student_id:
             return True
-        return False
+        else:
+            return False
 
     def __gt__(self, other):
         if self.gpa > other.gpa:
             return True
-        return False
+        else:
+            return False
 
     def __lt__(self, other):
         if self.gpa < other.gpa:
             return True
-        return False
+        else:
+            return False
 
 
 stu1 = input("What is the student's first name:")
