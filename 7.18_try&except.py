@@ -18,10 +18,19 @@ class student:
 
 
 user = ''
+l = []
 while user != 'q':
     try:
-        stu1 = student()
-        stu1.get_info()
+        for i in range(3):
+            stu1 = student()
+            stu1.get_info()
+            flag = False
+            for s in l:
+                if s == stu1:
+                    flag = True
+            if not flag:
+                l.append(stu1)
+    
     except:
         print("Something went wrong")
         print("Enter any key('q' to quit)")
