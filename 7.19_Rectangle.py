@@ -24,7 +24,8 @@ class rectangle:
             raise ValueError('Invalid length.')
 
     def __eq__(self, other):
-        if self.width == other.width and self.length == other.length:
+        if self.width == other.width and self.length == other.length or \
+                self.width == other.length and self.length == other.width:
             return True
         else:
             return False
@@ -41,7 +42,7 @@ while user_input != 'q':
             v = rec1.get_value()
             my_list.append(rec1)
             print(rec1)
-            print("Area:", v[0], "\nPerimeter:", v[1], "\n")
+            print("Area:%d\nPerimeter:%d" % (v[0], v[1]))
 
         except ValueError as excpt:
             print(excpt)
