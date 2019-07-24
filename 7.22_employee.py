@@ -1,17 +1,17 @@
 class employee:
-    def __init__(self, fname, lname, id, dur, sal):
+    def __init__(self, fname='', lname='', id=0, dur=0, sal=0):
         self.first_name = fname
         self.last_name = lname
         self.eID = id
         self.e_duration = int(dur)
-        self.salary_per_day = int(sal)
+        self.salary = int(sal)
 
     def __str__(self):
-        return "\nName:%s%s\nID:%08d\nDuration:%days\nSalary(per day):$%d" % \
-               (self.first_name, self.last_name, self.eID, self.e_duration, self.salary_per_day)
+        return "\nName:%s%s\nID:%08d\nDuration:%ddays\nSalary(per day):$%d" % \
+               (self.first_name, self.last_name, self.eID, self.e_duration, self.salary)
 
     def money(self):
-        m = self.e_duration * self.salary_per_day
+        m = self.e_duration * self.salary
         return int(m)
 
 
@@ -47,6 +47,11 @@ afile.write(str(sum(my_list)))
 afile.close()
 file.close()
 nfile = open('7.22_output.txt', 'r')
+for n in employee_list:
+    print(n)
+
+print("\n")
 for l in nfile:
     print(l)
+nfile.close()
 
