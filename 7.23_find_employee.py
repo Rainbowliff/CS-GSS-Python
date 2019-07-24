@@ -8,14 +8,13 @@ class employee:
         self.earned = self.e_duration * self.salary_per_day
 
     def __str__(self):
-        return "\nName:%s %s\nID:%08d\nDuration:%ddays\nSalary(per day):$%d\nEarned:%d" % \
+        return "\nName:%s %s\nID:%08d\nDuration:%ddays\nSalary(per day):$%d\nEarned:$%d" % \
                (self.first_name, self.last_name, self.eID, self.e_duration, self.salary_per_day, self.earned)
 
     def __eq__(self, other):
         if self.last_name == other:
             return True
         else:
-            print
             return False
 
 
@@ -45,8 +44,3 @@ for i in file:
 
 ln = input("Please enter the last name of the one you're looking for:")
 find_employee(my_list, ln, 0)
-
-
-
-
-
